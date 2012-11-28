@@ -136,164 +136,74 @@ WSH
 <h3> Логические </h3> 
        <b>&& ||</b>
 <p>
-тернарыне операции  выражение?вар1:вар2 
-Операция присваивания =
-Если объект простой, то копируется весь объект если же сложный то ссылка на объект
+<h3>Тернарыне операции</h3>
+<p>выражение?вар1:вар2
+<p>Операция присваивания =
+<p><cite> Если объект простой, то копируется весь объект если же сложный то ссылка на объект</cite>
 
 
+<p><h3>Вывод текста</h3>
+<p><cite>wscript.echo(«Hello world»);</cite>
 
-wscript.echo(«Hello world»);
-<>
-<xmp>
+<p><h3>Примеры интерпритаторов под ОС Windows</h3>
+<dl>
+<dd>wscript.exe</dd>
+<dd>csript.exe</dd>
+</dl>
+
+<p><h3>Пример просейшей программы написанной на Java Script</h3>
+<dl>
+<dd>x=1.2;</dd>
+<dd>y=2.5</dd>
+<dd>z=x*y;</dd>
+<dd>print(«z=»,z)</dd>
+</dl>
+<h2>Вывод данных из Java Script</h2>
+<dd>
+<dl><xmp>document.write(«<pre>»);</xmp></dl>
+<dl>document.write(«z=»,z);</dl>
+<dl>x= new Number('3.45');</dl>
+<dl><dd>
+<dd> y=Number(str); </dd>
+<dd>x=255;</dd>
+<dd>print(x.toString(16));</dd>
+<dd>z=0xff;</dd>
+</dd>
+</dl>
+</dl>
     
-wscript.exe
-csript.exe 
+<h3>Строки</h3>
+<p>s = new String(«hello»);
+<p>s = «hello»
+<cite>строка имеет много методов для манипуляции</cite>
+
+<h3>Массивы</h3>
+<dl>
+<dd>arr= [1,1,1,2,3,4];</dd>
+<dd>arr = new Array (100);</dd>
+<dd>arr = new Array(1,2,3);</dd>
+<cite><dd>Массив изменяет длинну.
+У массива есть свойство length которое
+возвращает длинну массива.</dd>
+<dd>Через Это свойство можно менять длинну массива Например
+    arr.lenght=10;</cite>
+ </dd>
+</dl>
+<h3>Создание объектов</h3>
+<dl>
+<dd>obj = {}
+<dd>obj = new object()
+<dd>obj = {x:1 , y:5 , Gamma: «The string»};
+<dd>obj = {'[':1, ']':-1 };
+<dd>obj.x ;
+<dd>obj['x'];
+<dd>obj['['];
+
+<dd>Point = {x:1, y:2};
+<dd>Point.z = 3;<cite> добавление свойства</cite>
+</dl>
 
 
-x=1.2;
-y=2.5
-z=x*y;
-print(«z=»,z)
-
-document.write(«<pre>»);
-document.write(«z=»,z);
-x= new Number('3.45');
-y=Number(str);
-
-x=255;
-print(x.toString(16));
-z=0xff;
-
- строка 
-s = new String(«hello»);
-s = «hello»
-строка имеет много методов для манипуляции 
-
-массивы
-arr= [1,1,1,2,3,4];
-arr = new Array (100);
-arr = new Array(1,2,3)
-массив изменяет длинну 
-У массива есть свойство length
-Возвращает длинну массива. Через него можно менять длинну
-arr.lenght=10;
-
-создание объектов 
-obj = {}
-obj = new object()
-obj = {x:1 , y:5 , Gamma: «The string»};
-obj = {'[':1, ']':-1 };
-obj.x ;
-obj['x'];
-obj['['];
-
-Point = {x:1, y:2};
-Point.z = 3; добавление свойства
-
-if (выражения )
-{  
-
-}
-
-propery in object
-возвращает true если свойства в объекте есть и  false если отсутствует
-if(p in obj) 
-obj[p]+=1;
-else
-obj[p]=1;
-
-операторы цыкла 
-for ( [начало];[условие конца];[прирощение])
-
-for(i=0;i<10;i++)
-for(;;)
-for(;RS.EOF;RS.MoveNext())
-
-for(property in object) — можем пройти по всем свойствам обекта 
-print (property , tapeof(object[property]));
-
-
-while(условие)
-оператор
-
-do
-оператор
-while(Условие)
-
-do
-
-while(RS.MoveNext(),!RS.EOF)
-
-break [метка]
-continue[метка]
-
-l1:for(..)
-      for(...)
-   …....... break l1;
-
-
-function имя ([список аргументов]){
-тело функции
-}
-
-var a,b,c,x,y;
-var x=1, b=[], c= {}
-
-Вызов функции :
-имя функции ([список аргументов])
-
-Перегрузка аргументов
-Если простые то по величине
-если сложные (массивы объекты), то по ссылке
-
-Переменные функции var fun=function (x,y){return x+y;}
-
-Point2D={x:1,y:2,toString = function()}
-{return «this.x+», «+this.y+» +»}»}}
-
-function Vector3D(x,y,z){
-this.x=x||0;
-this.y=y||0; 
-this.y=y||0;
-this.Add  function (v){....}
-tis.toString = function()..
-return this;
-}
-
-V1 = new Vector3D(1,2,3);
-V2 = new Vector3D(2,4,5);
-V3=V1.Add(v2);
-print(V3);
-
-function Sum(){
-var s=0,i;
-for(i=0;i<Sum.arguments.count,i++)
-S+=Sum.arguments.item(i);
-retutn s;
-}
-
-print (Sum(1,2,3,4));
-
-<body>
-<p id = «p1»> это абзац </p>
-<script>
-document.write(«<h1>Hello JavaScript</h1>»)
-</script>
-
-p1.innerHTML= «<b> это новый</b><i>абзац</i>»
-
-P1 = ocument.getElcment ByLd(«p1»);
-
-
-<scipt>
-s= «»;
-for (p in document) st = p+ «\t»+ typeof(document[p]) + «\n»;
-PRE  = document.pefElementsByNayName(«pre»)[0];
-PRE.innerHTML = S;
-}
-</script>
-
-</xmp>
 </body>
 </html>
 
