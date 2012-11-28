@@ -1,0 +1,300 @@
+<!DOCTYPE HTML>
+<html lang="uk">
+<head>
+<title>Лабораторная работа #1
+</title>
+<meta charset="UTF-8">
+</head>
+<body>
+
+<h1><div align = "center">JavaScript</div></h1> 
+<dl>
+<dd>Возник как язык сценариев.</dd>
+<dd>Первое название ESMA script.</dd> 
+</dl>
+<dl>
+<h3>Применяется</h3>
+<dd>
+HTML
+</dd>
+<dd>
+WSH
+</dd>
+
+<h3>Можно писать серверные реализации.</h3>
+<dl><dd>Node.js</dd></dl>
+
+<h3>javascript это интерпритатор</h3>
+
+Движок v8 используется в chrome и safari
+
+<p><a href = "http://www.nodejs.org">www.nodejs.org</a> <h4>сайт node.js</h4></p>
+    <p>Для того что бы вставить javaScript в html страницу :</p>
+
+<div align = "center">
+<table border = "1"> 
+<caption> Для подключения описанного ниже скрипта используется</caption>
+<tr>
+<th>
+<mark>
+<xmp>
+<script type= «application/javascript»><!----></script>
+</xmp>
+</mark>
+</tr>
+</th>
+</table>
+</div>
+
+<div align = "center">
+<table border = "1">
+    <caption>Для подключения скрипта из вне используеться следующая конструкция</caption>
+<tr>
+<th>
+<xmp>
+<script type= «   »  , sre= «URL»></script>
+</xmp>
+</th>
+</tr>
+</table>
+</div>
+
+<xmp>
+<html>
+<head>
+<script defer> пока страница не будет загружена
+…..
+</script>
+ </head>
+<body>
+….
+<script>
+</script>
+</xmp>
+    
+<dl>
+<dd>//- это коментарий до конца строки</dd>
+<dd><xmp>
+/*
+-это многострочный коментарий
+*/
+</xmp>
+</dd>
+</dl>
+    
+
+<b>Константы это числа которые записывються по правилам языка С</b><p>
+
+    <h3>Запись строк:</h3>
+<dl>
+    <dd>
+        'Это строка'
+    </dd>
+    <dd>
+        «Это тоже строка»
+    </dd>
+    <dd>
+        <xmp>
+            «это есть\
+            строка»
+        </xmp>
+    </dd>
+</dl>
+<p>
+Логические константы true false
+
+<h3>Символы</h3>
+<dl>
+    <dd>
+        A-z
+    </dd>
+    <dd>
+        $
+    </dd>
+    <dd>
+       0-9
+    </dd>
+</dl>
+
+<p>Язык чувствительный к регистру.
+<p>Существуют зарезервированные имена
+<p>Операции: + -* / %
+
+    
+<h3>Побитовые логические операции</h3>
+
+   <b> & | ^ ! </b>
+    
+<p>
+
+<h3> Сравнение </h3>
+      <b>> >= <= == != === !== === сравнение с учетом типов</b>
+       <p>
+       «12» = 12 результат false
+       <p>
+       
+<h3> Логические </h3> 
+       <b>&& ||</b>
+<p>
+тернарыне операции  выражение?вар1:вар2 
+Операция присваивания =
+Если объект простой, то копируется весь объект если же сложный то ссылка на объект
+
+
+
+wscript.echo(«Hello world»);
+<>
+<xmp>
+    
+wscript.exe
+csript.exe 
+
+
+x=1.2;
+y=2.5
+z=x*y;
+print(«z=»,z)
+
+document.write(«<pre>»);
+document.write(«z=»,z);
+x= new Number('3.45');
+y=Number(str);
+
+x=255;
+print(x.toString(16));
+z=0xff;
+
+ строка 
+s = new String(«hello»);
+s = «hello»
+строка имеет много методов для манипуляции 
+
+массивы
+arr= [1,1,1,2,3,4];
+arr = new Array (100);
+arr = new Array(1,2,3)
+массив изменяет длинну 
+У массива есть свойство length
+Возвращает длинну массива. Через него можно менять длинну
+arr.lenght=10;
+
+создание объектов 
+obj = {}
+obj = new object()
+obj = {x:1 , y:5 , Gamma: «The string»};
+obj = {'[':1, ']':-1 };
+obj.x ;
+obj['x'];
+obj['['];
+
+Point = {x:1, y:2};
+Point.z = 3; добавление свойства
+
+if (выражения )
+{  
+
+}
+
+propery in object
+возвращает true если свойства в объекте есть и  false если отсутствует
+if(p in obj) 
+obj[p]+=1;
+else
+obj[p]=1;
+
+операторы цыкла 
+for ( [начало];[условие конца];[прирощение])
+
+for(i=0;i<10;i++)
+for(;;)
+for(;RS.EOF;RS.MoveNext())
+
+for(property in object) — можем пройти по всем свойствам обекта 
+print (property , tapeof(object[property]));
+
+
+while(условие)
+оператор
+
+do
+оператор
+while(Условие)
+
+do
+
+while(RS.MoveNext(),!RS.EOF)
+
+break [метка]
+continue[метка]
+
+l1:for(..)
+      for(...)
+   …....... break l1;
+
+
+function имя ([список аргументов]){
+тело функции
+}
+
+var a,b,c,x,y;
+var x=1, b=[], c= {}
+
+Вызов функции :
+имя функции ([список аргументов])
+
+Перегрузка аргументов
+Если простые то по величине
+если сложные (массивы объекты), то по ссылке
+
+Переменные функции var fun=function (x,y){return x+y;}
+
+Point2D={x:1,y:2,toString = function()}
+{return «this.x+», «+this.y+» +»}»}}
+
+function Vector3D(x,y,z){
+this.x=x||0;
+this.y=y||0; 
+this.y=y||0;
+this.Add  function (v){....}
+tis.toString = function()..
+return this;
+}
+
+V1 = new Vector3D(1,2,3);
+V2 = new Vector3D(2,4,5);
+V3=V1.Add(v2);
+print(V3);
+
+function Sum(){
+var s=0,i;
+for(i=0;i<Sum.arguments.count,i++)
+S+=Sum.arguments.item(i);
+retutn s;
+}
+
+print (Sum(1,2,3,4));
+
+<body>
+<p id = «p1»> это абзац </p>
+<script>
+document.write(«<h1>Hello JavaScript</h1>»)
+</script>
+
+p1.innerHTML= «<b> это новый</b><i>абзац</i>»
+
+P1 = ocument.getElcment ByLd(«p1»);
+
+
+<scipt>
+s= «»;
+for (p in document) st = p+ «\t»+ typeof(document[p]) + «\n»;
+PRE  = document.pefElementsByNayName(«pre»)[0];
+PRE.innerHTML = S;
+}
+</script>
+
+</xmp>
+</body>
+</html>
+
+
